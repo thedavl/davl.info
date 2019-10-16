@@ -33,6 +33,7 @@
                 </ul>
                 <img class="image-container" v-bind:src="vueLogo">
                 <img class="image-container" v-bind:src="drfLogo">
+                <img class="image-container" v-bind:src="heroku">
             </div>
         </div>
     </div>
@@ -43,7 +44,8 @@ export default {
     data() {
         return {
             vueLogo: null,
-            drfLogo: null
+            drfLogo: null,
+            heroku: null,
         }
     },
     //https://dwglogo.com/wp-content/uploads/2017/09/Vue-logo-001.svg
@@ -51,6 +53,7 @@ export default {
         myFunction: function () {	
             this.vueLogo = "https://dwglogo.com/wp-content/uploads/2017/09/Vue-logo-001.svg";
             this.drfLogo = "https://www.django-rest-framework.org/img/logo.png"
+            this.heroku = "https://i.imgur.com/dGIjsuX.png"
         }
     },
     created() {
