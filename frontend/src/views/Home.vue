@@ -47,7 +47,7 @@ export default {
 <style scoped>
 
 .hov:hover .image-container {
-    filter: brightness(20%);
+    filter: brightness(15%);
 }
 
 .overlay {
@@ -75,7 +75,7 @@ export default {
     width: 600px;
     height: 400px;
     padding: 10px;
-    filter: brightness(55%);
+    filter: brightness(45%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
