@@ -33,6 +33,13 @@
                     >Projects
                     </router-link>
                 </li>
+                <li class="nav-item mr-1">
+                    <router-link
+                        :to="{ name: 'about-me' }"
+                        class="btn btn-sm btn btn-dark"
+                    >About Me
+                    </router-link>
+                </li>
                 <li v-if="isLoggedIn" class="nav-item">
                     <a class="btn btn-sm btn-outline-danger" href="/accounts/logout/">Logout</a>
                 </li>
@@ -93,5 +100,18 @@ export default {
 
     .navbar-brand:hover {
         color: #DC3545 !important;
+    }
+
+    .btn-dark {
+        background-color: rgb(170, 0, 204);
+        color: white;
+        border-color: rgb(170, 0, 204);
+    }
+
+    .btn-dark:hover,
+    .btn-dark:active    {
+        background-color: rgb(126, 0, 151);
+        color: #FFF;
+        border-color: rgb(126, 0, 151);
     }
 </style>
