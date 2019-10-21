@@ -6,12 +6,13 @@
         v-if="isLoggedIn"
         :to="{ name: 'post-editor' }"
         class="btn btn-sm btn-danger"
+        style="margin-left: 10px"
       >Post</router-link>
-      <button v-else class="btn btn-sm btn-danger">Login to Post</button>
+      <button v-else class="btn btn-sm btn-danger" style="margin-left: 10px">Login to Post</button>
       <br />
       <br />
-      <div v-for="post in posts" :key="post.pk">
-        <p clas="mb-0">
+      <div v-for="post in posts" :key="post.pk" class="card">
+        <p>
           Posted by:
           <span class="post-author">{{ post.author }}</span>
         </p>
@@ -22,11 +23,15 @@
           >{{ post.content }}</router-link>
         </h2>
         <p>Comments: {{ post.comments_count }}</p>
-        <hr />
       </div>
       <div class="my-4">
         <p v-show="loadingPosts">...loading...</p>
-        <button v-show="next" @click="getPosts" class="btn btn-sm btn-outline-success">Load More</button>
+        <button 
+          v-show="next" 
+          @click="getPosts" 
+          class="btn btn-sm btn-outline-success" 
+          style="margin-left: 10px">
+          Load More</button>
       </div>
     </div>
   </div>
@@ -98,5 +103,13 @@ export default {
 .post-link:hover {
   color: #343a40;
   text-decoration: none;
+}
+
+.card {
+  width: 80%;
+  padding-left: 10px;
+  padding-top: 12px;
+  margin: 10px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
 }
 </style>

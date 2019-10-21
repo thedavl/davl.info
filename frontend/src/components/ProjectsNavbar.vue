@@ -1,8 +1,7 @@
 <template>
-    <div>
-        <br>
+    <div style="margin-top: 8px">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 25px">
                 <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <button

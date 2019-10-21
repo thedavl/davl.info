@@ -1,6 +1,5 @@
 <template>
     <div>
-        <img class="arrow-container" v-bind:src="arrow">
         <p class="text-container"><strong>Click one of the projects to learn more!</strong></p>
     </div>
 </template>
@@ -10,13 +9,11 @@ export default {
     name: "DefaultProjectComponent",
     data() {
         return {
-            arrow: null
 
         }
     },
     methods: {
         myFunction: function () {	
-            this.arrow = "https://i.imgur.com/cIFoOKq.png";
         }
     },
     created() {
@@ -32,13 +29,8 @@ export default {
   align-items: center, stretch;
 }
 .text-container {
-    margin-top: 5px;
-}
-
-.arrow-container {
-    margin-top: -10px;
-    width: 140px;
-    height: 70px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 

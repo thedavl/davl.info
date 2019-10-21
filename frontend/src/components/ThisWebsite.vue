@@ -29,7 +29,6 @@
                     <li>User Registration/Login &#38; Permissions</li>
                     <li>User can Post, Comment on Posts, and Like Comments</li>
                     <li>Anonymous users can view all posts, comments, and likes</li>
-
                 </ul>
                 <img class="image-container" v-bind:src="vueLogo">
                 <img class="image-container" v-bind:src="drfLogo">
@@ -61,16 +60,18 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 .flex-container {
   display: flex;
   justify-content: center;
   align-items: center, stretch;
 }
 .project-container {
-    width: 500px;
+    padding: 15px;
+    width: 38%;
     margin-left: 20px;
     margin-right: 20px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .image-container {
     width: 320px;
