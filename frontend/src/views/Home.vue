@@ -56,8 +56,6 @@ export default {
 }
 
 .hov-long {
-  border-style: dashed;
-  border-color: aqua;
   position: relative;
   text-align: center;
   margin: 0 155px 0 155px;
