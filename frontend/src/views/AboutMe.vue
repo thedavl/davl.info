@@ -8,7 +8,7 @@
                 <h2><strong>Me</strong></h2>
                 <br>
                 <p>Hi, thanks for visiting my site!</p>
-                <p>My Name's David Lee, and i'm a prospective informatics Freshman 
+                <p>My name's David Lee, and i'm a prospective informatics Freshman 
                     at the University of Washington here in Seattle.</p>
 
                 <p>When i'm not coding, studying, or attending classes, you can find 

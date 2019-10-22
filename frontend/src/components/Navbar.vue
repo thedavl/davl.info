@@ -1,7 +1,6 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light my-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            
             <div v-on:click="setPageTitle">
                 <router-link
                     :to="{ name: 'home' }"
@@ -10,42 +9,45 @@
                 >David Lee
                 </router-link>
             </div>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                <li v-on:click="setPageTitle" class="nav-item active">
-                    <router-link
-                        :to="{ name: 'home' }"
-                        class="btn btn-sm btn-success"
-                    >Home
-                    </router-link>
-                </li>
-                <li class="nav-item mx-1">
-                    <router-link
-                        :to="{ name: 'blog' }"
-                        class="btn btn-sm btn-info"
-                    >Blog
-                    </router-link>
-                </li>
-                <li class="nav-item mr-1">
-                    <router-link
-                        :to="{ name: 'projects' }"
-                        class="btn btn-sm btn-primary"
-                    >Projects
-                    </router-link>
-                </li>
-                <li class="nav-item mr-1">
-                    <router-link
-                        :to="{ name: 'about-me' }"
-                        class="btn btn-sm btn btn-dark"
-                    >About Me
-                    </router-link>
-                </li>
-                <li v-if="isLoggedIn" class="nav-item">
-                    <a class="btn btn-sm btn-outline-danger" href="/accounts/logout/">Logout</a>
-                </li>
-                <li v-else class="nav-item">
-                    <a class="btn btn-sm btn-outline-danger" href="/accounts/login/">Login</a>
-                </li>
+                    <li v-on:click="setPageTitle" class="nav-item active">
+                        <router-link
+                            :to="{ name: 'home' }"
+                            class="btn btn-sm btn-success"
+                        >Home
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link
+                            :to="{ name: 'blog' }"
+                            class="btn btn-sm btn-info"
+                        >Blog
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link
+                            :to="{ name: 'projects' }"
+                            class="btn btn-sm btn-primary"
+                        >Projects
+                        </router-link>
+                    </li>
+                    <li class="nav-item">
+                        <router-link
+                            :to="{ name: 'about-me' }"
+                            class="btn btn-sm btn btn-dark"
+                        >About Me
+                        </router-link>
+                    </li>
+                    <li v-if="isLoggedIn" class="nav-item">
+                        <a class="btn btn-sm btn-outline-danger" href="/accounts/logout/">Logout</a>
+                    </li>
+                    <li v-else class="nav-item">
+                        <a class="btn btn-sm btn-outline-danger" href="/accounts/login/">Login</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -89,7 +91,7 @@ export default {
 
 <style>
     .my-navbar {
-        border-bottom: 1px solid #DDD;
+        color: lightgray;
     }
 
     .navbar-brand {
@@ -113,5 +115,10 @@ export default {
         background-color: rgb(126, 0, 151);
         color: #FFF;
         border-color: rgb(126, 0, 151);
+    }
+
+    .nav-item {
+        margin: 2px;
+        text-align: right;
     }
 </style>

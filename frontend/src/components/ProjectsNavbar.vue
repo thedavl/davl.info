@@ -1,30 +1,19 @@
 <template>
-    <div style="margin-top: 8px">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 25px">
-                <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <button
-                        type="button"
-                        v-on:click="toggleThisWebsite"
-                        class="btn btn-sm btn-outline-info ml-1"
-                        data-toggle="button"
-                        autocomplete="off"
-                    >This Website
-                    </button>
-                    <button
-                        type="button"
-                        v-on:click="toggleProjectTwo"
-                        class="btn btn-sm btn-outline-info ml-1"
-                        data-toggle="button"
-                        aria-pressed="true"
-                        autocomplete="off"
-                    >Auto-Sort Drawer
-                    </button>
-                </li>
-                </ul>
-            </div>
-        </nav>
+    <div>
+        <div class="projecto">
+            <button
+                type="button"
+                v-on:click="toggleThisWebsite"
+                class="btn btn-sm btn-outline-info ml-1"
+            >This Website
+            </button>
+            <button
+                type="button"
+                v-on:click="toggleProjectTwo"
+                class="btn btn-sm btn-outline-info ml-1"
+            >Auto-Sort Drawer
+            </button>
+        </div>
         <div align="center" style="margin-top:10px">
             <ThisWebsiteComponent v-if="displayThisSite" />
             <ProjectTwoComponent v-else-if="display2" />
@@ -66,3 +55,13 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.projecto {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    left: 12px;
+
+}
+</style>
