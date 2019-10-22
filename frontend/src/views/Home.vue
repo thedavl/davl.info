@@ -81,7 +81,7 @@ export default {
     text-decoration: none;
 }
 
-.overlay-desc{
+.overlay-desc {
     font-size: 20px;
     color: white;
     position: absolute; 

@@ -63,14 +63,12 @@ export default {
 <style scoped>
 .flex-container {
   display: flex;
-  justify-content: center;
-  align-items: center, stretch;
+  flex-wrap: wrap;
 }
 .project-container {
     padding: 15px;
-    width: 38%;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 480px;
+    margin: 10px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .image-container {
