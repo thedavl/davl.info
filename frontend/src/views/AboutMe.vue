@@ -72,18 +72,15 @@ export default {
 <style scoped>
 .flex-container {
   display: flex;
-  justify-content: center;
-  align-items: center, stretch;
+  flex-wrap: wrap;
 }
 
 .stuff-container {
-    width: 500px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 10px;
+    padding: 15px;
+    width: 480px;
+    margin: 10px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .logo {
     height: 15px;
     width: 15px;
