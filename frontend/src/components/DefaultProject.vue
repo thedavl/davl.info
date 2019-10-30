@@ -30,6 +30,7 @@ export default {
 }
 .text-container {
     margin-top: 50px;
+    margin-left: 22px;
     text-align: center;
 }
 
