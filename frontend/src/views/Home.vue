@@ -13,7 +13,7 @@
       <div class="hov">
         <router-link :to="{ name: 'blog' }"><img class="image-container" v-bind:src="blog" /></router-link>
         <router-link :to="{ name: 'blog' }" class="overlay">Blog</router-link>
-        <router-link :to="{ name: 'blog' }" class="overlay-desc">Fully functioning blog, built with a backend API</router-link>
+        <router-link :to="{ name: 'blog' }" class="overlay-desc">Functional blog, built with a backend API.</router-link>
       </div>
     </div>
     <div class="hov-long">
