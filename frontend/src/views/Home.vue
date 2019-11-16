@@ -53,14 +53,14 @@ export default {
 .hov {
   position: relative;
   text-align: center;
-  width: 38%;
+  width: 400px;
 }
 
 .hov-long {
   position: relative;
   text-align: center;
-  width: 75.8%;
-  margin-top: -18px;
+  width: 796px;
+  margin-top: -14px;
 }
 
 .hov:hover .image-container {
@@ -82,7 +82,7 @@ export default {
 }
 
 .overlay-desc {
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     position: absolute; 
     top: 60%;
@@ -115,15 +115,15 @@ export default {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 0.6s ease;
-    width: 100%;
+    width: 796px;
 }
 
 .overlay-long{
     font-size: 40px;
     color: white;
     position: absolute; 
-    left: 41%;
-    bottom: 95px;
+    left: 310px;
+    bottom: 75px;
     text-decoration: none;
 }
 </style>
