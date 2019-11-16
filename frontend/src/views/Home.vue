@@ -6,19 +6,19 @@
     </div>
     <div class="flex-container">
       <div class="hov">
-        <router-link :to="{ name: 'projects' }"><img class="image-container" v-bind:src="coding" /></router-link>
+        <router-link :to="{ name: 'projects' }"><img class="image-container" style="" v-bind:src="coding" /></router-link>
         <router-link :to="{ name: 'projects' }" class="overlay">Projects</router-link>
         <router-link :to="{ name: 'projects' }" class="overlay-desc">My projects, including how this site was built.</router-link>
       </div>
       <div class="hov">
-        <router-link :to="{ name: 'blog' }"><img class="image-container" v-bind:src="blog" /></router-link>
+        <router-link :to="{ name: 'blog' }"><img class="image-container" style="height: 95.2%" v-bind:src="blog" /></router-link>
         <router-link :to="{ name: 'blog' }" class="overlay">Blog</router-link>
         <router-link :to="{ name: 'blog' }" class="overlay-desc">Functional blog, built with a backend API.</router-link>
       </div>
     </div>
-    <div class="hov-long">
-      <div class="flex-container">
-          <router-link :to="{ name: 'about-me' }"><img class="image-long-container" v-bind:src="sea" /></router-link>
+    <div class="flex-container">
+      <div class="hov-long">
+        <router-link :to="{ name: 'about-me' }"><img class="image-long-container" v-bind:src="sea" /></router-link>
         <router-link :to="{ name: 'about-me' }" class="overlay-long">About Me</router-link> 
       </div>
     </div>
@@ -36,9 +36,9 @@ export default {
   },
   methods: {
     myFunction: function() {
-      this.coding = "https://i.imgur.com/tEVwLnR.jpg";
-      this.blog = "https://i.imgur.com/GdbwzkU.jpg";
-      this.sea = "https://i.imgur.com/bJBoY3u.jpg"
+      this.coding = "/static/img/code.jpg";
+      this.blog = "/static/img/blog.jpg";
+      this.sea = "/static/img/sea.jpg"
     }
   },
   created() {
@@ -53,12 +53,14 @@ export default {
 .hov {
   position: relative;
   text-align: center;
+  width: 38%;
 }
 
 .hov-long {
   position: relative;
   text-align: center;
-  margin: 0 155px 0 155px;
+  width: 75.8%;
+  margin-top: -18px;
 }
 
 .hov:hover .image-container {
@@ -113,17 +115,14 @@ export default {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 0.6s ease;
-    float: none;
-    display: block;
-	  margin: 0 auto;
-    width: 1040px;
-    padding: 2px 18px 0 18px;
+    width: 100%;
 }
 
 .overlay-long{
     font-size: 40px;
     color: white;
     position: absolute; 
+    left: 41%;
     bottom: 95px;
     text-decoration: none;
 }
