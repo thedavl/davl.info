@@ -76,6 +76,7 @@ export default {
     width: 480px;
     margin: 10px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #E8E8E8;
 }
 .image-container {
     width: 320px;

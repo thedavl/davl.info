@@ -111,5 +111,6 @@ export default {
   padding-top: 12px;
   margin: 10px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #E8E8E8
 }
 </style>

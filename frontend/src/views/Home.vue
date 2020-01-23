@@ -7,18 +7,16 @@
     <div class="container-dark">
       <div class="flex-container">
         <div class="hov">
-          <router-link :to="{ name: 'projects' }"><img class="image-container" style="" v-bind:src="coding" /></router-link>
-          <router-link :to="{ name: 'projects' }" class="overlay">Projects</router-link>
-          <router-link :to="{ name: 'projects' }" class="overlay-desc">My projects, including how this site was built.</router-link>
-        </div>
-        <div class="hov">
-          <router-link :to="{ name: 'blog' }"><img class="image-container" style="height: 95.2%" v-bind:src="blog" /></router-link>
-          <router-link :to="{ name: 'blog' }" class="overlay">Blog</router-link>
-          <router-link :to="{ name: 'blog' }" class="overlay-desc">Functional blog, built with a backend API.</router-link>
-        </div>
-        <div class="hov">
           <router-link :to="{ name: 'about-me' }"><img class="image-container" v-bind:src="sea" /></router-link>
-          <router-link :to="{ name: 'about-me' }" class="overlay">About Me</router-link> 
+          <router-link :to="{ name: 'about-me' }" class="overlay">Me</router-link> 
+        </div>
+        <div class="hov">
+          <router-link :to="{ name: 'projects' }"><img class="image-container-dark" v-bind:src="coding" /></router-link>
+          <router-link :to="{ name: 'projects' }" class="overlay">Projects</router-link>
+        </div>
+        <div class="hov">
+          <router-link :to="{ name: 'blog' }"><img class="image-container" v-bind:src="blog" /></router-link>
+          <router-link :to="{ name: 'blog' }" class="overlay">Blog</router-link>
         </div>
       </div>
     </div>
@@ -35,14 +33,14 @@ export default {
     };
   },
   methods: {
-    myFunction: function() {
+    getImages() {
       this.coding = "/static/img/code.jpg";
       this.blog = "/static/img/blog.jpg";
-      this.sea = "/static/img/sea.jpg";
+      this.sea = "/static/img/city.jpg";
     }
   },
   created() {
-    this.myFunction();
+    this.getImages();
     document.title = "David's Portfolio";
   }
 };
@@ -53,31 +51,22 @@ export default {
 .hov {
   position: relative;
   text-align: center;
-  width: 400px;
+  margin: 30px 10px 30px 10px
 }
 
-.hov:hover .image-container {
-	filter: brightness(15%);
+.hov:hover .image-container, .hov:hover .image-container-dark {
+	filter: brightness(40%);
 }
 
 .overlay {
-    font-size: 40px;
-    color: white;
+    font-size: 50px;
+    color: #D3D3D3;
     position: absolute; 
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
-}
-
-.overlay-desc {
-    font-size: 18px;
-    color: white;
-    position: absolute; 
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
+    text-shadow: 0 0 5px black;
 }
 
 .flex-container {
@@ -86,10 +75,10 @@ export default {
 }
 
 .image-container {
-    width: 100%;
-    padding: 0 2px 2px 2px;
-    filter: brightness(45%);
-    border-radius: 50%;
+    width: 300px;
+    height: 280px;
+    filter: brightness(70%);
+    border-radius:60%;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -97,13 +86,16 @@ export default {
     transition: all 0.6s ease;
 }
 
-.overlay-long {
-    font-size: 40px;
-    color: white;
-    position: absolute; 
-    left: 310px;
-    bottom: 75px;
-    text-decoration: none;
+.image-container-dark {
+    width: 300px;
+    height: 280px;
+    filter: brightness(90%);
+    border-radius: 60%;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 0.6s ease;
 }
 
 .container-dark {

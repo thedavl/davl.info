@@ -13,13 +13,10 @@
 
                 <p>When i'm not coding, studying, or attending classes, you can find 
                     me longboarding, playing badminton, 3D printing/building things, or 
-                    playing video games (Counter Strike or Warframe, anyone?)</p>
+                    playing video games.</p>
 
                 <p>I love keeping up with the latest tech, whether it be the latest   
                     computer hardware, or splurging too much on peripherals.</p>
-                <br>
-                <h2><strong>This whole site is a work in progress, currently working
-                            on spicing up all pages</strong></h2>
             </div>
             <div class="stuff-container">
                 <h2><strong>Skills</strong></h2>
@@ -80,6 +77,7 @@ export default {
     width: 480px;
     margin: 10px;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #E8E8E8
 }
 .logo {
     height: 15px;

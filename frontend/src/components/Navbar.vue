@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D3D3D3, height: 200px">
-        <div class="container" style="padding-top: 15px">
+        <div class="container" style="padding-top: 15px; border-bottom: 1px solid black;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -8,41 +8,41 @@
                 <ul class="navbar-nav w-100 justify-content-start">
                 </ul>
                 <ul class="navbar-nav w-100 justify-content-center">
-                    <li v-on:click="setPageTitle" class="nav-item active">
+                    <li v-on:click="setPageTitle" class="nav-item slide-center-out">
                         <router-link
                             :to="{ name: 'home' }"
                             class="nav-text"
                         >Home
                         </router-link>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item slide-center-out">
                         <router-link
-                            :to="{ name: 'blog' }"
+                            :to="{ name: 'about-me' }"
                             class="nav-text"
-                        >Blog
+                            st
+                        >Me
                         </router-link>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item slide-center-out">
                         <router-link
                             :to="{ name: 'projects' }"
                             class="nav-text"
                         >Projects
                         </router-link>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item slide-center-out">
                         <router-link
-                            :to="{ name: 'about-me' }"
+                            :to="{ name: 'blog' }"
                             class="nav-text"
-                            st
-                        >About Me
+                        >Blog
                         </router-link>
                     </li>
                 </ul>
                 <ul class="navbar-nav w-100 justify-content-end">
-                    <li v-if="isLoggedIn" class="nav-item">
+                    <li v-if="isLoggedIn" class="nav-item slide-center-out">
                         <a class="nav-text" href="/accounts/logout/">Logout</a>
                     </li>
-                    <li v-else class="nav-item">
+                    <li v-else class="nav-item slide-center-out">
                         <a class="nav-text" href="/accounts/login/">Login</a>
                     </li>
                 </ul>
@@ -116,10 +116,43 @@ export default {
 
     .nav-item {
         margin: 2px;
+        padding-bottom: 10px;
     }
 
     .nav-text {
-        margin: 10px;
-        color: BLACK
+        margin-left: 25px;
+        margin-right: 25px;
+        color: BLACK;
+    }
+
+    .nav-text:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+    .slide-center-out {
+        text-decoration:none;
+        display: inline-block;
+        color:black;
+    }
+
+    /* add a empty string after the elment with class .slide-center-out  */
+    .slide-center-out:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+        -webkit-transition: width .5s ease, background-color .5s ease;
+        -moz-transition: width .5s ease, background-color .5s ease;
+    
+        margin:auto; /* center the cotent so it will sliding from the midddle to the left and right */
+    }
+    
+    /* Change the width and background on hover, aka sliding from the middle to the left and right */
+    .slide-center-out:hover:after {
+        width: 100%;
+        background: black;
     }
 </style>
