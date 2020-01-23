@@ -34,6 +34,7 @@ export default {
       /* font-family: "Playfair Display", serif; */
       /* font-family: 'IBM Plex Sans', sans-serif; */
       font-family: 'Raleway', sans-serif;
+      background-color: #D3D3D3
     }
 
     .btn:focus {

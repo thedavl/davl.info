@@ -1,52 +1,49 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <div v-on:click="setPageTitle">
-                <router-link
-                    :to="{ name: 'home' }"
-                    class="navbar-brand"
-                    
-                >David Lee
-                </router-link>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #D3D3D3, height: 200px">
+        <div class="container" style="padding-top: 15px">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav w-100 justify-content-start">
+                </ul>
+                <ul class="navbar-nav w-100 justify-content-center">
                     <li v-on:click="setPageTitle" class="nav-item active">
                         <router-link
                             :to="{ name: 'home' }"
-                            class="btn btn-sm btn-success"
+                            class="nav-text"
                         >Home
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link
                             :to="{ name: 'blog' }"
-                            class="btn btn-sm btn-info"
+                            class="nav-text"
                         >Blog
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link
                             :to="{ name: 'projects' }"
-                            class="btn btn-sm btn-primary"
+                            class="nav-text"
                         >Projects
                         </router-link>
                     </li>
                     <li class="nav-item">
                         <router-link
                             :to="{ name: 'about-me' }"
-                            class="btn btn-sm btn btn-dark"
+                            class="nav-text"
+                            st
                         >About Me
                         </router-link>
                     </li>
+                </ul>
+                <ul class="navbar-nav w-100 justify-content-end">
                     <li v-if="isLoggedIn" class="nav-item">
-                        <a class="btn btn-sm btn-outline-danger" href="/accounts/logout/">Logout</a>
+                        <a class="nav-text" href="/accounts/logout/">Logout</a>
                     </li>
                     <li v-else class="nav-item">
-                        <a class="btn btn-sm btn-outline-danger" href="/accounts/login/">Login</a>
+                        <a class="nav-text" href="/accounts/login/">Login</a>
                     </li>
                 </ul>
             </div>
@@ -94,13 +91,13 @@ export default {
         color: lightgray;
     }
 
-    .navbar-brand {
+    .navbar-name {
         font-weight: bold;
         font-size: 130%;
-
+        color: BLACK
     }
 
-    .navbar-brand:hover {
+    .navbar-name:hover {
         color: #DC3545 !important;
     }
 
@@ -119,6 +116,10 @@ export default {
 
     .nav-item {
         margin: 2px;
-        text-align: right;
+    }
+
+    .nav-text {
+        margin: 10px;
+        color: BLACK
     }
 </style>
