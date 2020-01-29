@@ -2,7 +2,9 @@
   <div class="single-post mt-2">
     <div v-if="post" class="container">
       <br />
-      <router-link :to="{ name: 'blog' }" class="btn btn-sm btn-danger">Back</router-link>
+      <router-link :to="{ name: 'blog' }" class="btn btn-sm btn-danger"
+        >Back</router-link
+      >
       <br />
       <br />
       <h1>{{ post.content }}</h1>
@@ -28,13 +30,21 @@
             ></textarea>
           </div>
           <div class="card-footer px-3">
-            <button type="submit" class="btn btn-sm btn-success">Submit your comment</button>
+            <button type="submit" class="btn btn-sm btn-success">
+              Submit your comment
+            </button>
           </div>
         </form>
         <p v-if="error" class="error mt-2">{{ error }}</p>
       </div>
       <div v-else>
-        <button v-if="isLoggedIn" class="btn btn-sm btn-success" @click="showForm = true">Comment</button>
+        <button
+          v-if="isLoggedIn"
+          class="btn btn-sm btn-success"
+          @click="showForm = true"
+        >
+          Comment
+        </button>
         <button v-else class="btn btn-sm btn-success">Login to Comment</button>
       </div>
       <hr />
@@ -57,7 +67,9 @@
           v-show="next"
           @click="getPostComments"
           class="btn btn-sm btn-outline-success"
-        >Load More</button>
+        >
+          Load More
+        </button>
       </div>
     </div>
   </div>
@@ -89,7 +101,7 @@ export default {
       showForm: false,
       next: null,
       loadingComments: false,
-      requestUser: null,
+      requestUser: null
     };
   },
   computed: {
@@ -97,7 +109,7 @@ export default {
       return this.post.author === this.requestUser;
     },
     isLoggedIn() {
-        return this.requestUser !== "";
+      return this.requestUser !== "";
     }
   },
   methods: {

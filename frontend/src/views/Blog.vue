@@ -7,8 +7,11 @@
         :to="{ name: 'post-editor' }"
         class="btn btn-sm btn-danger"
         style="margin-left: 10px"
-      >Post</router-link>
-      <button v-else class="btn btn-sm btn-danger" style="margin-left: 10px">Login to Post</button>
+        >Post</router-link
+      >
+      <button v-else class="btn btn-sm btn-danger" style="margin-left: 10px">
+        Login to Post
+      </button>
       <br />
       <br />
       <div v-for="post in posts" :key="post.pk" class="card">
@@ -20,18 +23,21 @@
           <router-link
             :to="{ name: 'post', params: { slug: post.slug } }"
             class="post-link"
-          >{{ post.content }}</router-link>
+            >{{ post.content }}</router-link
+          >
         </h2>
         <p>Comments: {{ post.comments_count }}</p>
       </div>
       <div class="my-4">
         <p v-show="loadingPosts">...loading...</p>
-        <button 
-          v-show="next" 
-          @click="getPosts" 
-          class="btn btn-sm btn-outline-success" 
-          style="margin-left: 10px">
-          Load More</button>
+        <button
+          v-show="next"
+          @click="getPosts"
+          class="btn btn-sm btn-outline-success"
+          style="margin-left: 10px"
+        >
+          Load More
+        </button>
       </div>
     </div>
   </div>
@@ -48,7 +54,7 @@ export default {
       loadingPosts: false,
       isLoggedIn: null
     };
-  },   
+  },
   methods: {
     getPosts() {
       let endpoint = "/api/posts/";
@@ -111,6 +117,6 @@ export default {
   padding-top: 12px;
   margin: 10px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #E8E8E8
+  background-color: #e8e8e8;
 }
 </style>

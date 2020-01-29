@@ -33,7 +33,7 @@ export default new Router({
     {
       path: "/about-me/",
       name: "about-me",
-      component: AboutMe,
+      component: AboutMe
     },
     {
       path: "/post/:slug",
@@ -51,10 +51,10 @@ export default new Router({
       path: "/comment/:id",
       name: "comment-editor",
       component: CommentEditor,
-      props: true      
+      props: true
     },
     {
-      path: '*',
+      path: "*",
       name: "page-not-found",
       component: NotFound
     }

@@ -1,16 +1,16 @@
 <template>
-    <div>
-        <ProjectsNavbarComponent />
-    </div>
+  <div>
+    <ProjectsNavbarComponent />
+  </div>
 </template>
 
 <script>
-import ProjectsNavbarComponent from "@/components/ProjectsNavbar.vue"
+import ProjectsNavbarComponent from "@/components/ProjectsNavbar.vue";
 
 export default {
-    name: "ThisSiteProject",
-    components: {
-        ProjectsNavbarComponent
-    }
-}
+  name: "ThisSiteProject",
+  components: {
+    ProjectsNavbarComponent
+  }
+};
 </script>

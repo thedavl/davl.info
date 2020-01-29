@@ -1,25 +1,24 @@
 <template>
-    <div>
-        <p class="text-container"><strong>Click one of the projects to learn more!</strong></p>
-    </div>
+  <div>
+    <p class="text-container">
+      <strong>Click one of the projects to learn more!</strong>
+    </p>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "DefaultProjectComponent",
-    data() {
-        return {
-
-        }
-    },
-    methods: {
-        myFunction: function () {	
-        }
-    },
-    created() {
-        this.myFunction()
-    }
-}
+  name: "DefaultProjectComponent",
+  data() {
+    return {};
+  },
+  methods: {
+    myFunction: function() {}
+  },
+  created() {
+    this.myFunction();
+  }
+};
 </script>
 
 <style>
@@ -29,10 +28,8 @@ export default {
   align-items: center, stretch;
 }
 .text-container {
-    margin-top: 50px;
-    margin-left: 22px;
-    text-align: center;
+  margin-top: 50px;
+  margin-left: 22px;
+  text-align: center;
 }
-
-
 </style>
