@@ -34,7 +34,7 @@ body {
   /* font-family: "Playfair Display", serif; */
   /* font-family: 'IBM Plex Sans', sans-serif; */
   font-family: "Raleway", sans-serif;
-  background-color: #d3d3d3;
+  background-color: #eeeeee;
 }
 
 .btn:focus {

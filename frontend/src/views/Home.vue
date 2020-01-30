@@ -5,7 +5,7 @@
       style="padding-top: 50px; padding-bottom: 100px"
       align="center"
     >
-      <h1 style="font-weight: bold; padding-top: 30px">Hi, i'm David</h1>
+      <h1 style="padding-top: 30px">Hi, i'm <font color="#8c00ff"><strong>David Lee</strong></font></h1>
       <h4 style="padding: 10px">and this is my Portfolio.</h4>
     </div>
     <div class="container-dark">
@@ -113,7 +113,7 @@ export default {
 }
 
 .container-dark {
-  background-color: #181818;
+  background-color: #E0E0E0;
   height: 100%;
 }
 </style>

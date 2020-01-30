@@ -1,11 +1,11 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg navbar-light"
-    style="background-color: #D3D3D3, height: 200px"
+    class="navbar navbar-expand-lg"
+    style="background-color: #E0E0E0"
   >
     <div
       class="container"
-      style="padding-top: 15px; border-bottom: 1px solid black;"
+      style="padding-top: 12px"
     >
       <button
         class="navbar-toggler"
@@ -91,36 +91,9 @@ export default {
 </script>
 
 <style>
-.my-navbar {
-  color: lightgray;
-}
-
-.navbar-name {
-  font-weight: bold;
-  font-size: 130%;
-  color: BLACK;
-}
-
-.navbar-name:hover {
-  color: #dc3545 !important;
-}
-
-.btn-dark {
-  background-color: rgb(170, 0, 204);
-  color: white;
-  border-color: rgb(170, 0, 204);
-}
-
-.btn-dark:hover,
-.btn-dark:active {
-  background-color: rgb(126, 0, 151);
-  color: #fff;
-  border-color: rgb(126, 0, 151);
-}
 
 .nav-item {
-  margin: 2px;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
 }
 
 .nav-text {
@@ -131,7 +104,7 @@ export default {
 
 .nav-text:hover {
   text-decoration: none;
-  color: black;
+  color: BLACK;
 }
 
 .slide-center-out {
@@ -157,6 +130,6 @@ export default {
 /* Change the width and background on hover, aka sliding from the middle to the left and right */
 .slide-center-out:hover:after {
   width: 100%;
-  background: black;
+  background: #8c00ff;
 }
 </style>
