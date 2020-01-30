@@ -1,7 +1,7 @@
 <template>
   <nav
-    class="navbar navbar-expand-lg"
-    style="background-color: #E0E0E0"
+    class="navbar navbar-expand-lg navbar-light"
+    style="background-color: #D3D3D3, height: 200px"
   >
     <div
       class="container"
@@ -9,12 +9,13 @@
     >
       <button
         class="navbar-toggler"
-        type="button"
+        type="button btn-light"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style="color: BLACK"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
