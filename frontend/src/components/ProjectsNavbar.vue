@@ -1,56 +1,55 @@
 <template>
-  <div>
-    <div class="projecto">
+  <div align="center">
+    <nav
+    class="navbar navbar-expand-lg navbar-light"
+    style="background-color: #D3D3D3, height: 200px"
+    >
       <button
-        type="button"
-        v-on:click="toggleThisWebsite"
-        class="btn btn-sm btn-outline-info ml-1"
-      >
-        This Website
+          class="navbar-toggler"
+          type="button btn-light"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="color: BLACK"
+        >
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button
-        type="button"
-        v-on:click="toggleProjectTwo"
-        class="btn btn-sm btn-outline-info ml-1"
-      >
-        Auto-Sort Drawer
-      </button>
-    </div>
-    <div align="center" style="margin-top:10px">
-      <ThisWebsiteComponent v-if="displayThisSite" />
-      <ProjectTwoComponent v-else-if="display2" />
-      <DefaultProjectComponent v-else />
-    </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 justify-content-center">
+          <li class="nav-item slide-center-out">
+            <a
+            v-on:click="scrollTo1"
+            class="nav-text-small"
+            >
+              This Website
+            </a>
+          </li>
+          <li class="nav-item slide-center-out">
+            <a
+            v-on:click="scrollTo2"
+            class="nav-text-small"
+            >
+            LinkOut
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div style="width: 30%; border-bottom: 1.5px solid #E0E0E0"></div>
   </div>
 </template>
 
 <script>
-import ThisWebsiteComponent from "@/components/ThisWebsite.vue";
-import ProjectTwoComponent from "@/components/ProjectTwo.vue";
-import DefaultProjectComponent from "@/components/DefaultProject.vue";
-
 export default {
   name: "ProjectsNavbarComponent",
-  components: {
-    ThisWebsiteComponent,
-    ProjectTwoComponent,
-    DefaultProjectComponent
-  },
-  data() {
-    return {
-      // research using "isActive" vue functionality
-      displayThisSite: false,
-      display2: false
-    };
-  },
   methods: {
-    toggleThisWebsite() {
-      this.displayThisSite = !this.displayThisSite;
-      this.display2 = false;
+    scrollTo1() {
+      window.scrollBy(0, 100)
     },
-    toggleProjectTwo() {
-      this.display2 = !this.display2;
-      this.displayThisSite = false;
+    scrollTo2() {
+      window.scrollBy(0, 600)
     }
   }
 };
@@ -62,5 +61,12 @@ export default {
   margin-top: 20px;
   position: relative;
   left: 12px;
+}
+
+.nav-text-small {
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 16px;
+  color: BLACK;
 }
 </style>

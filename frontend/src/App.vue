@@ -40,4 +40,8 @@ body {
 .btn:focus {
   box-shadow: none !important;
 }
+
+a:hover {
+ cursor:pointer;
+}
 </style>

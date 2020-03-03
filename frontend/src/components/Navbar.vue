@@ -5,7 +5,7 @@
   >
     <div
       class="container"
-      style="padding-top: 12px"
+      style="padding-top: 12px; border-bottom: 1.5px solid #E0E0E0"
     >
       <button
         class="navbar-toggler"
@@ -17,7 +17,7 @@
         aria-label="Toggle navigation"
         style="color: BLACK"
       >
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav w-100 justify-content-start"></ul>
@@ -100,6 +100,7 @@ export default {
 .nav-text {
   margin-left: 25px;
   margin-right: 25px;
+  font-size: 18px;
   color: BLACK;
 }
 
@@ -118,7 +119,7 @@ export default {
 .slide-center-out:after {
   content: "";
   display: block;
-  height: 1px;
+  height: 1.5px;
   width: 0;
   background: transparent;
   transition: width 0.5s ease, background-color 0.5s ease;
@@ -131,6 +132,6 @@ export default {
 /* Change the width and background on hover, aka sliding from the middle to the left and right */
 .slide-center-out:hover:after {
   width: 100%;
-  background: #8c00ff;
+  background: #4B2E83;
 }
 </style>

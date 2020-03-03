@@ -5,7 +5,7 @@
       style="padding-top: 50px; padding-bottom: 100px"
       align="center"
     >
-      <h1 style="padding-top: 30px">Hi, i'm <font color="#8c00ff"><strong>David Lee</strong></font></h1>
+      <h1 style="padding-top: 30px">Hi, i'm <font color="#4B2E83"><strong>David Lee</strong></font></h1>
       <h4 style="padding: 10px">and this is my Portfolio.</h4>
     </div>
     <div class="container-dark">

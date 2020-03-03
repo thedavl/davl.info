@@ -22,6 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 with open('./secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
+# Yeah i know you can find the secret key on github, security isn't my biggest focus here!
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False

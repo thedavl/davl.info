@@ -34,14 +34,14 @@
         </p>
       </div>
       <div class="project-container">
-        <h2>This Website's Features</h2>
-        <ul>
-          <li>REST API + Vue JS Single Page Application Frontend</li>
-          <li>User Session Authentication</li>
-          <li>User Registration/Login &#38; Permissions</li>
-          <li>User can Post, Comment on Posts, and Like Comments</li>
-          <li>Anonymous users can view all posts, comments, and likes</li>
-        </ul>
+          <h2>This Website's Features</h2>
+          <ul>
+            <li>REST API + Vue JS Single Page Application Frontend</li>
+            <li>User Session Authentication</li>
+            <li>User Registration/Login &#38; Permissions</li>
+            <li>User can Post, Comment on Posts, and Like Comments</li>
+            <li>Anonymous users can view all posts, comments, and likes</li>
+          </ul>
         <img class="image-container" v-bind:src="vueLogo" />
         <img class="image-container" v-bind:src="drfLogo" />
         <img class="image-container" v-bind:src="heroku" />
@@ -61,7 +61,7 @@ export default {
   },
   //https://dwglogo.com/wp-content/uploads/2017/09/Vue-logo-001.svg
   methods: {
-    myFunction: function() {
+    loadImages() {
       this.vueLogo =
         "https://dwglogo.com/wp-content/uploads/2017/09/Vue-logo-001.svg";
       this.drfLogo = "https://www.django-rest-framework.org/img/logo.png";
@@ -69,7 +69,7 @@ export default {
     }
   },
   created() {
-    this.myFunction();
+    this.loadImages();
   }
 };
 </script>
