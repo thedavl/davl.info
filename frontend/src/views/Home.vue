@@ -4,7 +4,7 @@
             <div class="page">
                 <div class="fade-container">
                   <p class="scroll-txt">Learn more about me</p>
-                  <img class="scroll-down" :src="'../static/img/dnarrow.png'"/>
+                  <img class="scroll-down" :src="'../static/img/downarrow.png'"/>
                 </div>
                 <div class="fade-container" id="title">
                   <p class="container-title">Hi, I'm David</p>
