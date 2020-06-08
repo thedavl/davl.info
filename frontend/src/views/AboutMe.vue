@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 1700px">
+  <div style="height: 2300px">
     <img v-if="showScroll" class="scroll" :src="'../static/img/scroll.png'"/>
     <a v-on:click="scrollToTop">
       <img v-if="!showScroll" class="scroll-up" :src="'../static/img/scroll-up.png'"/>

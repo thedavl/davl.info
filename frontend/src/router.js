@@ -6,8 +6,6 @@ import NotFound from "./views/NotFound.vue";
 import Post from "./views/Post.vue";
 import PostEditor from "./views/PostEditor.vue";
 import Blog from "./views/Blog.vue";
-import Projects from "./views/Projects.vue";
-import AboutMe from "./views/AboutMe.vue";
 
 Vue.use(Router);
 
@@ -24,16 +22,6 @@ export default new Router({
       path: "/blog/",
       name: "blog",
       component: Blog
-    },
-    {
-      path: "/projects/",
-      name: "projects",
-      component: Projects
-    },
-    {
-      path: "/about-me/",
-      name: "about-me",
-      component: AboutMe
     },
     {
       path: "/post/:slug",

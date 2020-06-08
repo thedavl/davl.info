@@ -1,119 +1,445 @@
 <template>
-  <div class="home">
-    <div
-      class="container"
-      style="padding-top: 50px; padding-bottom: 100px"
-      align="center"
-    >
-      <h1 style="padding-top: 30px">Hi, i'm <font color="#4B2E83"><strong>David Lee</strong></font></h1>
-      <h4 style="padding: 10px">and this is my Portfolio.</h4>
+    <div style="height: 3000px">
+        <div>
+            <div class="page">
+                <div class="fade-container">
+                  <p class="scroll-txt">Learn more about me</p>
+                  <img class="scroll-down" :src="'../static/img/dnarrow.png'"/>
+                </div>
+                <div class="fade-container" id="title">
+                  <p class="container-title">Hi, I'm David</p>
+                  <p class="container-sub-title">I’m a university student and aspiring software engineer from Seattle.</p>
+                </div>
+            </div>
+            <div class="page background-purp">
+                <div class="fade-container" v-if="SP1">
+                    <br>
+                      <div class="flex-container">
+                          <div>
+                              <img 
+                                  id="uw" 
+                                  v-bind:src="'../static/img/uw.png'"/>
+                          </div>
+                          <div class="text-box">
+                              <p class="desc-container align-left" id="student">
+                                  Student at the University of Washington, Seattle
+                              </p>
+                              <p class="sub-desc-container" id="coursework">
+                                Coursework focusing on programming, including: <br>
+                                <ul>
+                                <li>Data Structures/Algorithms</li>
+                                <li>Data Programming in Python, R</li>
+                                <li>Web Programming</li>
+                                </ul>
+                              </p>
+                          </div>
+                      </div>
+                      <div class="flex-container">
+                          <div class="text-box">
+                              <p class="desc-container align-right" id="research">
+                                  Undergraduate Researcher Ubiquitous Computing Lab</p>
+                              <p class="sub-desc-container align-right"> 
+                                <strong>Built two web apps for the lab, used to record and label cough recordings.</strong> <br><br>
+                                Websites are used to gather/label cough data for the lab’s cough verification machine learning models.
+                              </p>
+                          </div>
+                          <div>
+                              <img
+                                  class="image-container"
+                                  id="ubicomp"
+                                  v-bind:src="'../static/img/ubicomplab.png'"/>
+                          </div>
+                      </div>
+                </div>
+            </div>
+            <div class="page">
+              <div class="fade-container" v-if="SP2">
+                  <div class="center">
+                      <div class="flex-container">
+                          <div class="skills-container">
+                              <img
+                                  class="image-container"
+                                  id="code"
+                                  v-bind:src="'../static/img/code.png'"
+                              />
+                              <p class="desc-container">
+                                Languages
+                              </p>
+                              <p class="detail-container">
+                                <strong>Java</strong><br>
+                              </p>
+                              <div class="list">
+                                The focus of my cs fundamental coursework, 
+                                including data structures/algorithms<br><br>
+                              </div>
+                              <p class="detail-container">
+                                <strong>Javascript</strong><br>
+                              </p>
+                              <div class="list">
+                                Including VueJs, React frameworks<br>
+                                Web programming coursework &#38; undergraduate research<br><br>
+                              </div>
+                              <p class="detail-container">
+                                <strong>Python</strong><br>
+                              </p>
+                              <div class="list">
+                                Django REST Framework, building backend APIs, and
+                                Data programming coursework
+                              </div>
+                          </div>
+                          <div class="skills-container">
+                              <img
+                                  class="image-container"
+                                  id="bubble"
+                                  v-bind:src="'../static/img/bubble.png'"
+                              />
+                              <p class="desc-container">
+                                Experience
+                              </p>
+                              <div class="detail-container">
+                                <strong>Development QA Intern</strong><br>
+                                Heated Details Inc, Seattle<br>
+                                <div class="list">
+                                  <ul>
+                                  <li>Assisting in the testing, development, and integration of key web applications.</li>
+                                  <li>Worked closely with the dev team to improve UI/UX, functionality, and debugging.</li>
+                                  </ul>
+                                </div>
+                                <strong>2020 Winfo (UW) Hackathon</strong><br>
+                                <div class="list">
+                                  <ul>
+                                    <li>Worked in a team of four to build a website designed to provide resources to recently released ex-cons</li>
+                                    <li>One of four teams nominated for “Best Overall”, out of 80 total competing teams.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="page background-purp" id="link-page">
+              <div class="fade-container" v-if="SP3" id="link-center">
+                  Connect with me
+                  <div class="center">
+                      <div class="flex-container">
+                          <div class="link-image">
+                              <a class="link" href="https://www.linkedin.com/in/thedavl/">
+                                  <img
+                                  class="image-container"
+                                  v-bind:src="'../static/img/linkedin.png'"
+                                  style="width: 170px"
+                                  />
+                                  <h3 href="https://www.linkedin.com/in/thedavl/">
+                                  My LinkedIn
+                                  </h3>
+                              </a>
+                          </div>
+                          <div class="link-image">
+                              <a class="link" href="https://github.com/thedavl">
+                                  <img
+                                  class="image-container"
+                                  v-bind:src="'../static/img/github.png'"
+                                  style="width: 170px"
+                                  />
+                                  <h3 href="https://github.com/thedavl">
+                                  My Github
+                                  </h3>
+                              </a>
+                          </div>
+                          <div class="link-image">
+                              <img
+                                  class="image-container"
+                                  v-bind:src="'../static/img/email.png'"
+                                  style="width: 170px"
+                              />
+                              <h3 style="color: black">thedavl@uw.edu</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="fade-container" v-if="showScrollUp">
+          <a v-on:click="scrollToTop">
+              <div class="scroll-up">
+                <img class="scroll-up-icon" :src="'../static/img/upload.png'"/>
+                <p class="scroll-up-txt">Back to top</p>
+              </div>
+          </a>
+        </div>
     </div>
-    <div class="container-dark">
-      <div class="flex-container">
-        <div class="hov">
-          <router-link :to="{ name: 'about-me' }"
-            ><img class="image-container" v-bind:src="sea"
-          /></router-link>
-          <router-link :to="{ name: 'about-me' }" class="overlay"
-            >Me</router-link
-          >
-        </div>
-        <div class="hov">
-          <router-link :to="{ name: 'projects' }"
-            ><img class="image-container-dark" v-bind:src="coding"
-          /></router-link>
-          <router-link :to="{ name: 'projects' }" class="overlay"
-            >Projects</router-link
-          >
-        </div>
-        <div class="hov">
-          <router-link :to="{ name: 'blog' }"
-            ><img class="image-container" v-bind:src="blog"
-          /></router-link>
-          <router-link :to="{ name: 'blog' }" class="overlay">Blog</router-link>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      coding: null,
-      blog: null,
-      sea: null
-    };
-  },
-  methods: {
-    getImages() {
-      this.coding = "/static/img/code.jpg";
-      this.blog = "/static/img/blog.jpg";
-      this.sea = "/static/img/city.jpg";
+    name: "Home",
+    data() {
+        return {
+            SP1: false,
+            SP2: false,
+            SP3: false,
+            showScrollUp: false,
+            showScrollText: true
+        };
+    },
+    methods: {
+        handleScroll() {
+            if(window.scrollY > 300) {
+                this.SP1 = true;
+            } else {
+                this.showScrollUp = false;
+            }
+            if (window.scrollY > 1200) {
+                this.SP2 = true;
+                this.showScrollUp = true
+            }
+            if (window.scrollY > 2000) {
+                this.SP3 = true;
+            }
+        },
+        scrollToTop() {
+            window.scrollBy(0, -5000)
+        }
+    },
+    created() {
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    destroyed() {
+        window.removeEventListener("scroll", this.handleScroll);
     }
-  },
-  created() {
-    this.getImages();
-    document.title = "David's Portfolio";
-  }
-};
+}
 </script>
 
 <style scoped>
-.hov {
+
+.link-image {
+  width: 300px;
+}
+
+.page {
+  min-height: 94vh;
+  margin: 0 auto;
   position: relative;
   text-align: center;
-  margin: 30px 10px 30px 10px;
 }
 
-.hov:hover .image-container,
-.hov:hover .image-container-dark {
-  filter: brightness(40%);
+.background-purp {
+  background-color: #ece8fc;
 }
 
-.overlay {
-  font-size: 50px;
-  color: #d3d3d3;
+.center {
+    text-align: center;
+}
+
+.skills-container {
+  width: 450px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.desc-container {
+  max-width: 360px;
+  font-size: 23px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1.5px solid black;
+}
+
+.sub-desc-container {
+  font-size: 20px;
+  max-width: 360px;
+}
+
+.detail-container {
+  text-align: left;
+  font-size: 20px;
+  max-width: 360px;
+}
+
+.list {
+  font-size: 17px;
+  text-align: left;
+}
+
+#link-page {
+  min-height: 70vh;
+}
+
+#link-center {
+  color: #632494;
+  font-size: 60px;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+#title {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-decoration: none;
-  text-shadow: 0 0 5px black;
+  top: 26%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#bubble {
+  margin-top: 20px;
+  margin-right: 40px;
+  height: 240px;
+  width: 230px;
+}
+
+#code {
+  margin-right: 40px;
+  width: 260px;
+  height: 260px;
+}
+
+#ubicomp {
+  background-color: black;
+  width: 380px;
+  height: 100px;
+  margin: 20px 0 0 30px;
+}
+
+#uw {
+  max-height: 250px;
+  max-width: 360px;
+  margin-top: 20px;
+}
+
+#student {
+  margin-left: 40px;
+}
+
+#coursework {
+  margin-left: 40px;
+  text-align: left;
+}
+
+.container-title {
+    text-align: center;
+    color: #632494;
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.container-sub-title {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    max-width: 380px;
+    margin: 0 auto;
 }
 
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
 }
 
-.image-container {
-  width: 300px;
-  height: 280px;
-  filter: brightness(70%);
-  border-radius: 60%;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 0.6s ease;
+.text-box {
+    padding: 15px;
 }
 
-.image-container-dark {
-  width: 300px;
-  height: 280px;
-  filter: brightness(90%);
-  border-radius: 60%;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 0.6s ease;
+.fade-container {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
-.container-dark {
-  background-color: #E0E0E0;
-  height: 100%;
+.scroll-down {
+  width: 45px;
+  position: absolute;
+  bottom: 5%;
+  margin-left: -23px;
+}
+
+.scroll-txt {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  bottom: 12%;
+}
+
+.scroll-up {
+  position: fixed;
+  left: 82.5%;
+  bottom: 4%;
+}
+
+.scroll-up-icon {
+  width: 35px;
+  margin-left: 22px;
+}
+.scroll-up-txt {
+  width: 80px;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>

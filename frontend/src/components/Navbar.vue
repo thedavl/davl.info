@@ -1,11 +1,11 @@
 <template>
   <nav
     class="navbar navbar-expand-lg navbar-light"
-    style="background-color: #D3D3D3, height: 200px"
+    style="background-color: black, height: 200px"
   >
     <div
       class="container"
-      style="padding-top: 12px; border-bottom: 1.5px solid #E0E0E0"
+      style="padding-top: 12px"
     >
       <button
         class="navbar-toggler"
@@ -15,26 +15,14 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        style="color: BLACK"
       >
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav w-100 justify-content-start"></ul>
-        <ul class="navbar-nav w-100 justify-content-center">
+        <ul class="navbar-nav ml-auto">
           <li v-on:click="setPageTitle" class="nav-item slide-center-out">
             <router-link :to="{ name: 'home' }" class="nav-text"
               >Home
-            </router-link>
-          </li>
-          <li class="nav-item slide-center-out">
-            <router-link :to="{ name: 'about-me' }" class="nav-text" st
-              >Me
-            </router-link>
-          </li>
-          <li class="nav-item slide-center-out">
-            <router-link :to="{ name: 'projects' }" class="nav-text"
-              >Projects
             </router-link>
           </li>
           <li class="nav-item slide-center-out">
@@ -43,7 +31,7 @@
             </router-link>
           </li>
         </ul>
-        <ul class="navbar-nav w-100 justify-content-end">
+        <ul class="navbar-nav">
           <li v-if="isLoggedIn" class="nav-item slide-center-out">
             <a class="nav-text" href="/accounts/logout/">Logout</a>
           </li>
@@ -101,12 +89,12 @@ export default {
   margin-left: 25px;
   margin-right: 25px;
   font-size: 18px;
-  color: BLACK;
+  color: black;
 }
 
 .nav-text:hover {
   text-decoration: none;
-  color: BLACK;
+  color: black;
 }
 
 .slide-center-out {
@@ -132,6 +120,6 @@ export default {
 /* Change the width and background on hover, aka sliding from the middle to the left and right */
 .slide-center-out:hover:after {
   width: 100%;
-  background: #4B2E83;
+  background: black;
 }
 </style>

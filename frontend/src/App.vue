@@ -30,11 +30,9 @@ export default {
 <style>
 html,
 body {
-  height: 100%;
-  /* font-family: "Playfair Display", serif; */
-  /* font-family: 'IBM Plex Sans', sans-serif; */
   font-family: "Raleway", sans-serif;
-  background-color: #eeeeee;
+  color: black;
+  background-color: #FFFFFF;
 }
 
 .btn:focus {
@@ -43,5 +41,9 @@ body {
 
 a:hover {
  cursor:pointer;
+}
+
+a > h3 {
+  text-decoration: none;
 }
 </style>
