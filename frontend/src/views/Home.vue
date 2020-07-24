@@ -41,6 +41,7 @@
                               <p class="sub-desc-container align-right"> 
                                 <strong>Built two web apps for the lab, used to record and label cough recordings.</strong> <br><br>
                                 Websites are used to gather/label cough data for the lab’s cough verification machine learning models.
+                                Both are designed to be highly scaleable, utilizing AWS services.
                               </p>
                           </div>
                           <div>
@@ -66,6 +67,9 @@
                                 Languages
                               </p>
                               <p class="detail-container">
+                                <img
+                                  class="smaller-mini-logo"
+                                  v-bind:src="'../static/img/java.png'">
                                 <strong>Java</strong><br>
                               </p>
                               <div class="list">
@@ -73,6 +77,9 @@
                                 including data structures/algorithms<br><br>
                               </div>
                               <p class="detail-container">
+                                <img
+                                  class="smaller-mini-logo"
+                                  v-bind:src="'../static/img/js.png'">
                                 <strong>Javascript</strong><br>
                               </p>
                               <div class="list">
@@ -80,11 +87,55 @@
                                 Web programming coursework &#38; undergraduate research<br><br>
                               </div>
                               <p class="detail-container">
+                                <img
+                                  class="smaller-mini-logo"
+                                  v-bind:src="'../static/img/python.png'">
                                 <strong>Python</strong><br>
                               </p>
                               <div class="list">
                                 Django REST Framework, building backend APIs, and
                                 Data programming coursework
+                              </div>
+                          </div>
+                          <div class="skills-container">
+                              <img
+                                  class="image-container"
+                                  id="code"
+                                  v-bind:src="'../static/img/code.png'"
+                              />
+                              <p class="desc-container">
+                                Frameworks
+                              </p>
+                              <p class="detail-container">
+                                <img
+                                  class="mini-logo"
+                                  v-bind:src="'../static/img/Vue_js.png'">
+                                  <strong>VueJS (Javascript)</strong><br>
+                              </p>
+                              <div class="list">
+                                I've built multiple frontends with VueJS, 
+                                for personal project and my undergraduate research. 
+                                My experience includes building blog UIs, survey forms, 
+                                audio collection forms, and informational webpages.<br><br>
+                              </div>
+                              <p class="detail-container">
+                                <img
+                                  class="smaller-mini-logo"
+                                  v-bind:src="'../static/img/django.png'">
+                                <strong>Django (Python)</strong><br>
+                              </p>
+                              <div class="list">
+                                My work includes secured blog APIs, Survey Data handling APIs, as well as interaction with AWS S3 Storage and PostgreSQL storage, all
+                                with user signup/authentication features.<br><br>
+                              </div>
+                              <p class="detail-container">
+                                <img
+                                  class="mini-logo"
+                                  v-bind:src="'../static/img/node.png'">
+                                <strong>NodeJS (Javascript)</strong><br>
+                              </p>
+                              <div class="list">
+                                I've started teaching myself NodeJS most recently, and have created a basic CRUD API supporting secure user signup and authentication.
                               </div>
                           </div>
                           <div class="skills-container">
@@ -212,7 +263,13 @@ export default {
 </script>
 
 <style scoped>
-
+.smaller-mini-logo {
+  width: 50px;
+  padding: 0 12px 0 12px;
+}
+.mini-logo {
+  width: 50px;
+}
 .link-image {
   width: 300px;
 }
