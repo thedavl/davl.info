@@ -100,8 +100,8 @@
                           <div class="skills-container">
                               <img
                                   class="image-container"
-                                  id="code"
-                                  v-bind:src="'../static/img/code.png'"
+                                  id="frameworks"
+                                  v-bind:src="'../static/img/framework.png'"
                               />
                               <p class="desc-container">
                                 Frameworks
@@ -358,6 +358,13 @@ export default {
   margin-right: 40px;
   width: 260px;
   height: 260px;
+}
+
+#frameworks {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  width: 240px;
+  height: 240px;
 }
 
 #ubicomp {
