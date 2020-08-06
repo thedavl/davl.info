@@ -48,7 +48,7 @@
                               <img
                                   class="image-container"
                                   id="ubicomp"
-                                  v-bind:src="'../static/img/ubicomplab.png'"/>
+                                  v-bind:src="'../static/img/lablogo.png'"/>
                           </div>
                       </div>
                 </div>
@@ -368,7 +368,6 @@ export default {
 }
 
 #ubicomp {
-  background-color: black;
   width: 380px;
   height: 100px;
   margin: 20px 0 0 30px;
