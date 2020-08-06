@@ -25,7 +25,11 @@
                                   Student at the University of Washington, Seattle
                               </p>
                               <p class="sub-desc-container" id="coursework">
-                                Coursework focusing on programming, including: <br>
+                                  <strong>Intended Informatics and Math Major</strong>
+                                  <strong>GPA: 3.91/4, Graduating June, 2023</strong>
+                              </p>
+                              <p class="sub-desc-container" id="coursework">
+                                Coursework focusing on Software Engineering, including: <br>
                                 <ul>
                                 <li>Data Structures/Algorithms</li>
                                 <li>Data Programming in Python, R</li>
@@ -36,12 +40,12 @@
                       </div>
                       <div class="flex-container">
                           <div class="text-box">
-                              <p class="desc-container align-right" id="research">
-                                  Undergraduate Researcher Ubiquitous Computing Lab</p>
+                              <p class="desc-container align-right">
+                                  Undergraduate Researcher UbiComp Lab, UW</p>
                               <p class="sub-desc-container align-right"> 
                                 <strong>Built two web apps for the lab, used to record and label cough recordings.</strong> <br><br>
-                                Websites are used to gather/label cough data for the lab’s cough verification machine learning models.
-                                Both are designed to be highly scaleable, utilizing AWS services.
+                                The two apps are used to gather and label cough data for the lab’s cough recognition project.
+                                Both are designed to be highly scaleable, integrating with AWS tools.
                               </p>
                           </div>
                           <div>
@@ -54,6 +58,7 @@
                 </div>
             </div>
             <div class="page">
+              <br><br>
               <div class="fade-container" v-if="SP2">
                   <div class="center">
                       <div class="flex-container">
@@ -83,8 +88,9 @@
                                 <strong>Javascript</strong><br>
                               </p>
                               <div class="list">
-                                Including VueJs, React frameworks<br>
-                                Web programming coursework &#38; undergraduate research<br><br>
+                                VueJs, React frameworks<br>
+                                Web programming coursework &#38; websites built for my 
+                                undergraduate research<br><br>
                               </div>
                               <p class="detail-container">
                                 <img
@@ -93,8 +99,8 @@
                                 <strong>Python</strong><br>
                               </p>
                               <div class="list">
-                                Django REST Framework, building backend APIs, and
-                                Data programming coursework
+                                Django Framework, building backend APIs, and
+                                Data programming coursework with Numpy, Pandas, Matplotlib
                               </div>
                           </div>
                           <div class="skills-container">
@@ -113,10 +119,8 @@
                                   <strong>VueJS (Javascript)</strong><br>
                               </p>
                               <div class="list">
-                                I've built multiple frontends with VueJS, 
-                                for personal project and my undergraduate research. 
-                                My experience includes building blog UIs, survey forms, 
-                                audio collection forms, and informational webpages.<br><br>
+                                Experience includes this portfolio and web apps for my research lab.
+                                Features include survey forms, audio recording/replaying, blog UI.<br><br>
                               </div>
                               <p class="detail-container">
                                 <img
@@ -125,8 +129,8 @@
                                 <strong>Django (Python)</strong><br>
                               </p>
                               <div class="list">
-                                My work includes secured blog APIs, Survey Data handling APIs, as well as interaction with AWS S3 Storage and PostgreSQL storage, all
-                                with user signup/authentication features.<br><br>
+                                I've built secured blog and Audio/Survey handling APIs. Features include integration 
+                                with AWS S3/PostgreSQL storage and user signup/authentication.<br><br>
                               </div>
                               <p class="detail-container">
                                 <img
@@ -135,7 +139,7 @@
                                 <strong>NodeJS (Javascript)</strong><br>
                               </p>
                               <div class="list">
-                                I've started teaching myself NodeJS most recently, and have created a basic CRUD API supporting secure user signup and authentication.
+                                I've created CRUD APIs supporting secure user signup and authentication.<br><br>
                               </div>
                           </div>
                           <div class="skills-container">
@@ -149,14 +153,15 @@
                               </p>
                               <div class="detail-container">
                                 <strong>Development QA Intern</strong><br>
-                                Heated Details Inc, Seattle<br>
+                                <p class="detail-subtitle">Heated Details Inc, Seattle</p>
                                 <div class="list">
                                   <ul>
                                   <li>Assisting in the testing, development, and integration of key web applications.</li>
                                   <li>Worked closely with the dev team to improve UI/UX, functionality, and debugging.</li>
                                   </ul>
                                 </div>
-                                <strong>2020 Winfo (UW) Hackathon</strong><br>
+                                <strong>2020 Winfo Hackathon</strong><br>
+                                <p class="detail-subtitle">University of Washington, Seattle</p>
                                 <div class="list">
                                   <ul>
                                     <li>Worked in a team of four to build a website designed to provide resources to recently released ex-cons</li>
@@ -263,6 +268,10 @@ export default {
 </script>
 
 <style scoped>
+.detail-subtitle {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
 .smaller-mini-logo {
   width: 50px;
   padding: 0 12px 0 12px;
@@ -290,7 +299,7 @@ export default {
 }
 
 .skills-container {
-  width: 450px;
+  width: 380px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -313,7 +322,7 @@ export default {
 
 .sub-desc-container {
   font-size: 20px;
-  max-width: 360px;
+  max-width: 400px;
 }
 
 .detail-container {
@@ -368,7 +377,7 @@ export default {
 }
 
 #ubicomp {
-  width: 380px;
+  width: 400px;
   height: 100px;
   margin: 20px 0 0 30px;
 }
@@ -406,7 +415,6 @@ export default {
 .flex-container {
     display: flex;
     justify-content: center;
-    padding-top: 50px;
     flex-wrap: wrap;
 }
 
