@@ -25,8 +25,8 @@
                                   Student at the University of Washington, Seattle
                               </p>
                               <p class="sub-desc-container" id="coursework">
-                                  <strong>Intended Informatics and Math Major</strong>
-                                  <strong>GPA: 3.91/4, Graduating June, 2023</strong>
+                                  <strong>Intended Informatics and Math Major</strong><br>
+                                  <strong>GPA: 3.91/4.0, Graduating: June 2023</strong>
                               </p>
                               <p class="sub-desc-container" id="coursework">
                                 Coursework focusing on Software Engineering, including: <br>
