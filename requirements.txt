@@ -10,10 +10,10 @@ django-allauth==0.39.1
 django-crispy-forms==1.7.2
 django-heroku==0.3.1
 django-registration==3.0.1
-django-rest==0.0.1
-django-rest-auth==0.9.5
-django-rest-framework==0.1.0
-django-webpack-loader==0.6.0
+django-rest
+django-rest-auth
+django-rest-framework
+django-webpack-loader
 djangorestframework==3.10.2
 entrypoints==0.3
 flake8==3.7.9
