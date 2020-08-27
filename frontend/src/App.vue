@@ -28,8 +28,9 @@ export default {
 </script>
 
 <style>
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+#app {
   font-family: "Raleway", sans-serif;
   color: black;
   background-color: #FFFFFF;

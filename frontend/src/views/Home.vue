@@ -4,7 +4,7 @@
             <div class="page">
                 <div class="fade-container">
                   <p class="scroll-txt">Learn more about me</p>
-                  <img class="scroll-down" :src="'../static/img/downarrow.png'"/>
+                  <img class="scroll-down" src="@/assets/downarrow.png"/>
                 </div>
                 <div class="fade-container" id="title">
                   <p class="container-title">Hi, I'm David</p>
@@ -12,214 +12,23 @@
                 </div>
             </div>
             <div class="page background-purp">
-                <div class="fade-container" v-if="SP1">
-                    <br>
-                      <div class="flex-container">
-                          <div>
-                              <img 
-                                  id="uw" 
-                                  v-bind:src="'../static/img/uw.png'"/>
-                          </div>
-                          <div class="text-box">
-                              <p class="desc-container align-left" id="student">
-                                  Student at the University of Washington, Seattle
-                              </p>
-                              <p class="sub-desc-container" id="coursework">
-                                  <strong>Intended Informatics and Math Major</strong><br>
-                                  <strong>GPA: 3.91/4.0, Graduating: June 2023</strong>
-                              </p>
-                              <p class="sub-desc-container" id="coursework">
-                                Coursework focusing on Software Engineering, including: <br>
-                                <ul>
-                                <li>Data Structures/Algorithms</li>
-                                <li>Data Programming in Python, R</li>
-                                <li>Web Programming</li>
-                                </ul>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="flex-container">
-                          <div class="text-box">
-                              <p class="desc-container align-right">
-                                  Undergraduate Researcher UbiComp Lab, UW</p>
-                              <p class="sub-desc-container align-right"> 
-                                <strong>Built two web apps for the lab, used to record and label cough recordings.</strong> <br><br>
-                                The two apps are used to gather and label cough data for the lab’s cough recognition project.
-                                Both are designed to be highly scaleable, integrating with AWS tools.
-                              </p>
-                          </div>
-                          <div>
-                              <img
-                                  class="image-container"
-                                  id="ubicomp"
-                                  v-bind:src="'../static/img/lablogo.png'"/>
-                          </div>
-                      </div>
-                </div>
+                <ProjectsComponent v-if="SP1" />
             </div>
             <div class="page">
-              <br><br>
-              <div class="fade-container" v-if="SP2">
-                  <div class="center">
-                      <div class="flex-container">
-                          <div class="skills-container">
-                              <img
-                                  class="image-container"
-                                  id="code"
-                                  v-bind:src="'../static/img/code.png'"
-                              />
-                              <p class="desc-container">
-                                Languages
-                              </p>
-                              <p class="detail-container">
-                                <img
-                                  class="smaller-mini-logo"
-                                  v-bind:src="'../static/img/java.png'">
-                                <strong>Java</strong><br>
-                              </p>
-                              <div class="list">
-                                The focus of my cs fundamental coursework, 
-                                including data structures/algorithms<br><br>
-                              </div>
-                              <p class="detail-container">
-                                <img
-                                  class="smaller-mini-logo"
-                                  v-bind:src="'../static/img/js.png'">
-                                <strong>Javascript</strong><br>
-                              </p>
-                              <div class="list">
-                                VueJs, React frameworks<br>
-                                Web programming coursework &#38; websites built for my 
-                                undergraduate research<br><br>
-                              </div>
-                              <p class="detail-container">
-                                <img
-                                  class="smaller-mini-logo"
-                                  v-bind:src="'../static/img/python.png'">
-                                <strong>Python</strong><br>
-                              </p>
-                              <div class="list">
-                                Django Framework, building backend APIs, and
-                                Data programming coursework with Numpy, Pandas, Matplotlib
-                              </div>
-                          </div>
-                          <div class="skills-container">
-                              <img
-                                  class="image-container"
-                                  id="frameworks"
-                                  v-bind:src="'../static/img/framework.png'"
-                              />
-                              <p class="desc-container">
-                                Frameworks
-                              </p>
-                              <p class="detail-container">
-                                <img
-                                  class="mini-logo"
-                                  v-bind:src="'../static/img/Vue_js.png'">
-                                  <strong>VueJS (Javascript)</strong><br>
-                              </p>
-                              <div class="list">
-                                Experience includes this portfolio and web apps for my research lab.
-                                Features include survey forms, audio recording/replaying, blog UI.<br><br>
-                              </div>
-                              <p class="detail-container">
-                                <img
-                                  class="smaller-mini-logo"
-                                  v-bind:src="'../static/img/django.png'">
-                                <strong>Django (Python)</strong><br>
-                              </p>
-                              <div class="list">
-                                I've built secured blog and Audio/Survey handling APIs. Features include integration 
-                                with AWS S3/PostgreSQL storage and user signup/authentication.<br><br>
-                              </div>
-                              <p class="detail-container">
-                                <img
-                                  class="mini-logo"
-                                  v-bind:src="'../static/img/node.png'">
-                                <strong>NodeJS (Javascript)</strong><br>
-                              </p>
-                              <div class="list">
-                                I've created CRUD APIs supporting secure user signup and authentication.<br><br>
-                              </div>
-                          </div>
-                          <div class="skills-container">
-                              <img
-                                  class="image-container"
-                                  id="bubble"
-                                  v-bind:src="'../static/img/bubble.png'"
-                              />
-                              <p class="desc-container">
-                                Experience
-                              </p>
-                              <div class="detail-container">
-                                <strong>Development QA Intern</strong><br>
-                                <p class="detail-subtitle">Heated Details Inc, Seattle</p>
-                                <div class="list">
-                                  <ul>
-                                  <li>Assisting in the testing, development, and integration of key web applications.</li>
-                                  <li>Worked closely with the dev team to improve UI/UX, functionality, and debugging.</li>
-                                  </ul>
-                                </div>
-                                <strong>2020 Winfo Hackathon</strong><br>
-                                <p class="detail-subtitle">University of Washington, Seattle</p>
-                                <div class="list">
-                                  <ul>
-                                    <li>Worked in a team of four to build a website designed to provide resources to recently released ex-cons</li>
-                                    <li>One of four teams nominated for “Best Overall”, out of 80 total competing teams.</li>
-                                  </ul>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                <AcademicsComponent v-if="SP2" />
             </div>
-            <div class="page background-purp" id="link-page">
-              <div class="fade-container" v-if="SP3" id="link-center">
-                  Connect with me
-                  <div class="center">
-                      <div class="flex-container">
-                          <div class="link-image">
-                              <a class="link" href="https://www.linkedin.com/in/thedavl/">
-                                  <img
-                                  class="image-container"
-                                  v-bind:src="'../static/img/linkedin.png'"
-                                  style="width: 170px"
-                                  />
-                                  <h3 href="https://www.linkedin.com/in/thedavl/">
-                                  My LinkedIn
-                                  </h3>
-                              </a>
-                          </div>
-                          <div class="link-image">
-                              <a class="link" href="https://github.com/thedavl">
-                                  <img
-                                  class="image-container"
-                                  v-bind:src="'../static/img/github.png'"
-                                  style="width: 170px"
-                                  />
-                                  <h3 href="https://github.com/thedavl">
-                                  My Github
-                                  </h3>
-                              </a>
-                          </div>
-                          <div class="link-image">
-                              <img
-                                  class="image-container"
-                                  v-bind:src="'../static/img/email.png'"
-                                  style="width: 170px"
-                              />
-                              <h3 style="color: black">thedavl@uw.edu</h3>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            <div class="page background-purp">
+              <br><br>
+              <SkillsComponent  v-if="SP3" />
+            </div>
+            <div class="page" id="link-page">
+              <SocialMediaComponent v-if="SP4" />
             </div>
         </div>
         <div class="fade-container" v-if="showScrollUp">
           <a v-on:click="scrollToTop">
               <div class="scroll-up">
-                <img class="scroll-up-icon" :src="'../static/img/upload.png'"/>
+                <img class="scroll-up-icon" src="@/assets/upload.png"/>
                 <p class="scroll-up-txt">Back to top</p>
               </div>
           </a>
@@ -228,13 +37,25 @@
 </template>
 
 <script>
+import AcademicsComponent from "@/components/AcademicsComponent.vue"
+import SkillsComponent from "@/components/SkillsComponent.vue"
+import SocialMediaComponent from "@/components/SocialMediaComponent.vue"
+import ProjectsComponent from "@/components/ProjectsComponent.vue"
+
 export default {
     name: "Home",
+    components: {
+      AcademicsComponent,
+      SkillsComponent,
+      SocialMediaComponent,
+      ProjectsComponent
+    },
     data() {
         return {
             SP1: false,
             SP2: false,
             SP3: false,
+            SP4: false,
             showScrollUp: false,
             showScrollText: true
         };
@@ -246,12 +67,15 @@ export default {
             } else {
                 this.showScrollUp = false;
             }
-            if (window.scrollY > 1200) {
+            if (window.scrollY > 1400) {
                 this.SP2 = true;
                 this.showScrollUp = true
             }
-            if (window.scrollY > 2000) {
+            if (window.scrollY > 2400) {
                 this.SP3 = true;
+            }
+            if (window.scrollY > 3200) {
+                this.SP4 = true;
             }
         },
         scrollToTop() {
@@ -267,7 +91,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .detail-subtitle {
   font-size: 17px;
   margin-bottom: 5px;
@@ -299,7 +123,7 @@ export default {
 }
 
 .skills-container {
-  width: 380px;
+  width: 450px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -318,6 +142,7 @@ export default {
   font-weight: bold;
   padding-bottom: 15px;
   border-bottom: 1.5px solid black;
+  margin-top: 6px;
 }
 
 .sub-desc-container {
