@@ -12,20 +12,20 @@
                 </div>
             </div>
             <div class="page background-purp">
-                <ProjectsComponent v-if="SP1" />
+                <ProjectsComponent v-show="SP1" />
             </div>
             <div class="page">
-                <AcademicsComponent v-if="SP2" />
+                <AcademicsComponent v-show="SP2" />
             </div>
             <div class="page background-purp">
               <br><br>
-              <SkillsComponent  v-if="SP3" />
+              <SkillsComponent  v-show="SP3" />
             </div>
             <div class="page" id="link-page">
-              <SocialMediaComponent v-if="SP4" />
+              <SocialMediaComponent v-show="SP4" />
             </div>
         </div>
-        <div class="fade-container" v-if="showScrollUp">
+        <div class="fade-container" v-show="showScrollUp">
           <a v-on:click="scrollToTop">
               <div class="scroll-up">
                 <img class="scroll-up-icon" src="@/assets/upload.png"/>

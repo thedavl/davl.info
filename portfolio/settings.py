@@ -26,7 +26,7 @@ with open('./secret_key.txt') as f:
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['davids-personal-portfolio.herokuapp.com', 'localhost']
 

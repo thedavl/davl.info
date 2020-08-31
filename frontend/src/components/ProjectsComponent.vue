@@ -1,7 +1,7 @@
 <template>
     <div id="link-center">
         <div class="fade-container">
-            Noteable Projects
+            Noteable Projects<br><br>
             <div class="flex-container">
                 <div class="project-card">
                     <img class="project-card-image" src="@/assets/codebrain.png" />
@@ -9,7 +9,8 @@
                         A website dedicated to helping you on your technical interview prep journey. <br><br>
                         Track what you've solved, and what problems to do next. Record important notes and solutions for later review. <br><br>
                         Tech used:<br> VueJs + NodeJs + ExpressJs + MongoDB Atlas<br><br>
-                        <a type="button" href="https://thedavl.github.io/CodeBrain" target="_blank" class="btn btn-outline-light">Link</a>
+                        <a type="button" href="https://thedavl.github.io/CodeBrain" target="_blank" class="btn btn-outline-light">Website Link</a>
+                        <a type="button" href="https://github.com/thedavl/CodeBrain" target="_blank" class="btn btn-outline-light right-button">GitHub Repo</a>
                     </div>
                     <div class="project-card-title-background">
                         <p class="project-card-title">
@@ -24,7 +25,8 @@
                         Made with Andrea Dang and Colin Dang.<br><br>
                         FitFriends allows users to create, share, and explore workouts online.<br><br>
                         I wrote the app's NodeJs/MongoDB backend, and worked with my teammates to write the VueJs frontend.<br><br>
-                        <a type="button" href="https://devpost.com/software/fitfriends" target="_blank" class="btn btn-outline-light">Link</a>
+                        <a type="button" href="https://devpost.com/software/fitfriends" target="_blank" class="btn btn-outline-light">Hackathon Project Page</a>
+                        <a type="button" href="https://github.com/thedavl/hack2020-David-Andrea-Collin" target="_blank" class="btn btn-outline-light right-button">GitHub Repo</a>
                     </div>
                     <div class="project-card-title-background">
                         <p class="project-card-title">
@@ -33,7 +35,15 @@
                     </div>
                 </div>
                 <div class="project-card">
+                    <img class="project-card-image" src="@/assets/link-out.png" />
                     <div class="project-card-description">
+                        LinkOut was my team's project for the 2020 Winfo (UW) Hackathon. Linkout is site made for recently released ex-cons, 
+                        using the Google Maps API and browser geolocation to show job resources nearby. <br><br>
+                        
+                        We were one of four teams nominated for “Best Overall”, 
+                        out of 80 total teams.<br><br>
+                        The website was created using a VueJs frontend, and a Django REST Framework Backend (Python).
+
                     </div>
                     <div class="project-card-title-background">
                         <p class="project-card-title">
@@ -53,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+.right-button {
+    margin-left: 10px;
+}
 .project-card {
     position: relative;
     background-color: black;
@@ -85,6 +98,7 @@ export default {
     opacity: 0;
     font-weight: normal;
     z-index: 10;
+    text-align: left;
 }
 .project-card-title {
     position: absolute;

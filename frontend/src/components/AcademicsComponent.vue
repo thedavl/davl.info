@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="fade-container">
-            <br>
+            <br><br><br>
                 <div class="flex-container">
                     <div>
                         <img 
