@@ -2,6 +2,7 @@
     <div>
         <div class="fade-container">
                   <div class="center">
+                    <br><br>
                       <div class="flex-container">
                           <div class="skills-container">
                               <img
