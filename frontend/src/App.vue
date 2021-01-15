@@ -28,10 +28,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 #app {
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   color: black;
   background-color: #FFFFFF;
 }

@@ -73,6 +73,7 @@ export default {
     height: 400px;
     margin: 10px 10px 0 10px;
     border-radius: 5px;
+    border: 1px solid black;
 }
 .project-card img {
     transition: 0.5s ease;
@@ -96,7 +97,6 @@ export default {
     transform: translate(-50%, -50%);
     transition: 0.5s ease;
     opacity: 0;
-    font-weight: normal;
     z-index: 10;
     text-align: left;
 }
@@ -113,6 +113,9 @@ export default {
     width: 400px;
     border-radius: 0 0 5px 5px;
     background-color: white;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
     position: absolute;
     top: 90.1%;
     left: 50%;

@@ -3,7 +3,7 @@
         <div>
             <div class="page">
                 <div class="fade-container">
-                  <p class="scroll-txt">Learn more about me</p>
+                  <p class="scroll-txt">More about me</p>
                   <img class="scroll-down" src="@/assets/downarrow.png"/>
                 </div>
                 <div class="fade-container" id="title">
@@ -67,14 +67,14 @@ export default {
             } else {
                 this.showScrollUp = false;
             }
-            if (window.scrollY > 1400) {
+            if (window.scrollY > 1200) {
                 this.SP2 = true;
                 this.showScrollUp = true
             }
-            if (window.scrollY > 2400) {
+            if (window.scrollY > 2000) {
                 this.SP3 = true;
             }
-            if (window.scrollY > 3200) {
+            if (window.scrollY > 2600) {
                 this.SP4 = true;
             }
         },
@@ -115,7 +115,9 @@ export default {
 }
 
 .background-purp {
-  background-color: #ece8fc;
+  /* background-color: #ece8fc; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .center {
@@ -139,7 +141,6 @@ export default {
 .desc-container {
   max-width: 360px;
   font-size: 23px;
-  font-weight: bold;
   padding-bottom: 15px;
   border-bottom: 1.5px solid black;
   margin-top: 6px;
@@ -168,7 +169,6 @@ export default {
 #link-center {
   color: #632494;
   font-size: 60px;
-  font-weight: bold;
   width: 100%;
   margin: 0 auto;
   padding-top: 80px;
@@ -217,22 +217,15 @@ export default {
   margin-left: 40px;
 }
 
-#coursework {
-  margin-left: 40px;
-  text-align: left;
-}
-
 .container-title {
     text-align: center;
     color: #632494;
     font-size: 75px;
-    font-weight: bold;
 }
 
 .container-sub-title {
     text-align: center;
     font-size: 23px;
-    font-weight: bold;
     max-width: 380px;
     margin: 0 auto;
 }
@@ -264,7 +257,6 @@ export default {
 
 .scroll-txt {
   font-size: 20px;
-  font-weight: bold;
   width: 100%;
   position: absolute;
   bottom: 12%;
