@@ -1,7 +1,7 @@
 <template>
     <div id="link-center">
         <div class="fade-container">
-            Noteable Projects<br><br>
+            Projects<br><br>
             <div class="flex-container">
                 <div class="project-card">
                     <img class="project-card-image" src="@/assets/codebrain.png" />
@@ -73,7 +73,7 @@ export default {
     height: 400px;
     margin: 10px 10px 0 10px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid rgb(182, 182, 182);
 }
 .project-card img {
     transition: 0.5s ease;
@@ -113,9 +113,9 @@ export default {
     width: 400px;
     border-radius: 0 0 5px 5px;
     background-color: white;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-right: 1px solid rgb(182, 182, 182);
+    border-left: 1px solid rgb(182, 182, 182);
+    border-bottom: 1px solid rgb(182, 182, 182);
     position: absolute;
     top: 90.1%;
     left: 50%;

@@ -4,11 +4,17 @@
             <div class="page">
                 <div class="fade-container">
                   <p class="scroll-txt">More about me</p>
-                  <img class="scroll-down" src="@/assets/downarrow.png"/>
                 </div>
                 <div class="fade-container" id="title">
                   <p class="container-title">Hi, I'm David</p>
                   <p class="container-sub-title">I’m a university student and aspiring software engineer from Seattle.</p>
+                </div>
+                <div class="scroll-dn">
+                  <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' 
+                  viewBox='0 0 512 512'><title>Arrow Down</title>
+                  <path fill='none' stroke='currentColor' 
+                  stroke-linecap='round' stroke-linejoin='round' 
+                  stroke-width='48' d='M112 268l144 144 144-144M256 392V100'/></svg>
                 </div>
             </div>
             <div class="page background-purp">
@@ -28,7 +34,13 @@
         <div class="fade-container" v-show="showScrollUp">
           <a v-on:click="scrollToTop">
               <div class="scroll-up">
-                <img class="scroll-up-icon" src="@/assets/upload.png"/>
+                <div class="scroll-up-icon">
+                  <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' 
+                    viewBox='0 0 512 512'><title>Arrow Up</title>
+                  <path fill='none' stroke='currentColor' 
+                  stroke-linecap='round' stroke-linejoin='round' 
+                  stroke-width='48' d='M112 268l144 144 144-144M256 392V100'/></svg>
+                </div>
                 <p class="scroll-up-txt">Back to top</p>
               </div>
           </a>
@@ -99,6 +111,7 @@ export default {
 .smaller-mini-logo {
   width: 50px;
   padding: 0 12px 0 12px;
+  margin-bottom: 4.5px;
 }
 .mini-logo {
   width: 50px;
@@ -116,8 +129,10 @@ export default {
 
 .background-purp {
   /* background-color: #ece8fc; */
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  width: 90vw;
+  margin: 0 auto;
+  border-top: 1px solid rgb(182, 182, 182);
+  border-bottom: 1px solid rgb(182, 182, 182);
 }
 
 .center {
@@ -142,7 +157,7 @@ export default {
   max-width: 360px;
   font-size: 23px;
   padding-bottom: 15px;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid rgb(182, 182, 182);
   margin-top: 6px;
 }
 
@@ -155,6 +170,7 @@ export default {
   text-align: left;
   font-size: 20px;
   max-width: 360px;
+  margin: 0px 0 5px 0;
 }
 
 .list {
@@ -248,11 +264,12 @@ export default {
     animation: fadein 2s;
 }
 
-.scroll-down {
-  width: 45px;
+.scroll-dn {
+  width: 25px;
   position: absolute;
-  bottom: 5%;
-  margin-left: -23px;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%)
 }
 
 .scroll-txt {
@@ -269,8 +286,9 @@ export default {
 }
 
 .scroll-up-icon {
-  width: 35px;
-  margin-left: 22px;
+  width: 25px;
+  transform: scaleY(-1);
+  margin-left: 28px;
 }
 .scroll-up-txt {
   width: 80px;
